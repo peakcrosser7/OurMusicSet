@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-image: url(material/indexbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.scroll{
+	margin: 0 auto;
+}
+.scroll img{
+	width: 1100px;
+}
+
+.tabbar{
+	margin: 0 auto;
+	padding:0 20px 20px;
+}
+
+.tabbar table{
+	border-radius: 20px;
+	padding: 0;
+	background-color:#F9F9F9;
+	box-shadow: 2px 2px 3px lightgrey;
+	border-collapse: collapse;
+}
+
+.tabbar .button{
+	padding: 10px 30px 10px;
+	margin: 0;
+	
+	border-color:transparent lightgrey transparent transparent;
+	border-width: 1px;
+	border-style: solid;
+	
+	font-family: Arial,"微软雅黑";
+	font-size: 18px;;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.tabbar th:hover{
+	box-shadow: 3px 3px 3px lightgrey;
+}
+
+.tabbar #last{
+	border-color:transparent;
+	border-radius: 0 20px 20px 0;
+	color: #646466;
+}
+
+.tabbar #last:hover{
+	animation: color5 1s forwards;
+}
+
+.tabbar #first{
+	border-radius: 20px 0 0 20px;
+	color: #BEA356;
+}
+
+.tabbar #first:hover{
+	animation: color1 1s forwards;
+}
+
+.tabbar #second{
+	color: #6CA8C8;
+}
+
+.tabbar #second:hover{
+	animation: color2 1s forwards;
+}
+
+.tabbar #third{
+	color: #23A7F8;
+}
+
+.tabbar #third:hover{
+	animation: color3 1s forwards;
+}
+
+.tabbar #forth{
+	color:#363B3D;
+}
+
+.tabbar #forth:hover{
+	animation: color4 1s forwards;
+}
+
+
+.button{
+	cursor: pointer;
+}
+
+.button img{
+	width: 160px;
+	padding: 2px;
+	border-radius: 10px;
+	opacity: 0.8;
+	background-color: #F9F9F9;
+}
+
+.button:hover img{
+	width:164px;
+	padding: 0;
+	opacity: 1;
+	box-shadow: 3px 3px 3px lightgrey;
+}
+
+ .button>div{
+	opacity: 0.5;
+	
+}
+
+.button:hover>div{
+	opacity: 1;
+	position: relative;
+}
+
+.button .tiptext{
+	visibility: hidden;
+	position: absolute;
+	left: 0%;
+	margin: 0;
+	padding: 0 10px 0;
+	font-size: 12px;
+	text-align: left;
+	background-color: inherit;
+	border-radius: 15px;
+	border: 1px solid #cccccc;
+	opacity: 0;
+}
+
+.tiptext ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.button:hover .tiptext{
+	visibility: visible;
+	bottom: -104px;
+	opacity: 1;
+	transition: opacity 1s;
+
+}
+
+/* 按钮选中文字的小三角*/
+.button .tiptext::after{
+	content: "";
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:transparent transparent #aaaaaa transparent;
+}
+
+/*bgm 音乐图标*/
+.bgmpart img{
+	padding: 30px;
+	width: 72px;
+	position: fixed;
+	right: 0px;
+	top:0px;
+}
+
+/*背景色改变动画*/
+@-webkit-keyframes color1{
+
+	100%{background-color:#F9FDD4; }
+}
+
+@-webkit-keyframes color2{
+	100%{background-color:#E1D4F9; }
+}
+
+@-webkit-keyframes color3{
+	100%{background-color:#C0F6FF; }
+}
+
+@-webkit-keyframes color4{
+	100%{background-color:#F8E4AA; }
+}
+
+@-webkit-keyframes color5{
+	100%{background-color:#E7FAD3; }
+}
+

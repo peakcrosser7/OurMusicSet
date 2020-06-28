@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OurMusic</title>
+<link rel="shortcut icon" href="material/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="indexcss.css">
+</head>
+
+<body>
+	<div class="scroll">
+		<img id="ourMusicSet" src="material/musicset.png" alt="music set">
+	</div>
+	<div class="tabbar">
+	<table>
+		<tr>
+		<th class="button" id="first">
+			<a>
+			<img src="material/lovetheworld.png" alt="wanna love the world">
+			</a>	
+			<div>好想爱这个世界啊
+			<div class="tiptext">
+				<ul>
+					<li>华晨宇</li>
+					<li>“当你的笑容绽开，这世界突然填满色彩。”</li>
+				</ul>
+			</div>
+			</div>
+		</th>
+			
+		<th class="button" id="second">
+		  <a>
+		  <img src="material/crave.jpg" alt="the crave">
+		  </a>
+	    <div>the crave
+			<div class="tiptext">
+				<ul>
+					<li>Ennio Morricone</li>
+					<li>“音乐是在有限的琴键上，奏出无限的音乐”</li>
+				 </ul>
+			</div>
+		</div>
+		</th>	
+			
+		<th class="button" id="third">
+		  <a>
+		  <img src="material/myname.png" alt="my name">
+		  </a>
+	    <div>我的名字
+			<div class="tiptext">
+				<ul>
+					<li>焦迈奇</li>
+					<li>“我会懂得舍得记得，你是我是你的”</li>
+				</ul>
+			</div>	
+		</div>
+		</th>
+			
+		<th class="button" id="forth">
+			<a>
+				<img src="material/hill.jpg" alt="the hill">
+			</a>
+		<div>山丘
+			<div class="tiptext">
+				<ul>
+					<li>李宗盛</li>
+					<li>“为何记不得上一次是谁给的拥抱，在什么时候。”</li>
+				</ul>
+			</div>
+		</div>
+		</th>
+			
+		<th class="button" onclick="window.open('pages/MercuryNote.html');bgmStop();" id="last">
+			<a>
+				<img src="material/album.jpg" alt="Mercury note">
+			</a>
+			<div>水星记
+				<div class="tiptext">
+				<ul>
+					<li>郭顶</li>
+					<li>“环游是无趣，至少可以陪着你”</li>
+				</ul>
+				</div>
+			</div>
+		</th>
+		</tr>
+	  </table>
+	</div>
+	<div class="bgmpart">
+		<div id="play">
+			<img id="playing" src="material/play.png" alt="play">
+			<img id="paused" src="material/pause.png" alt="paused">
+		</div>
+		<audio id="music" src="material/bgm.mp3" preload="auto"></audio> 
+	</div>
+</body>
+	<script type="text/javascript" src="bgmjs.js"></script>
+</html>
+ 

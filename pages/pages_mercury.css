@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	height: 100%;	
+	/* 设置div的背景图百分比高度需父级高度设定，
+	此处需要html和body同时设置为高100%才可*/
+}
+
+.main{
+	display: flex; 	
+	flex-flow: row nowrap;
+	justify-content: center;
+	height: 100%;
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.ablum{
+	display: flex;
+	flex-direction: column;
+}
+
+.ablum img{
+	width: 300px;
+	padding-top: 80px;
+	padding-right: 80px;
+	padding-bottom: 10px;
+	
+}
+
+.mid{
+}
+
+.mid img{
+	width: 300px;
+	margin-top: 80px;
+}
+
+
+ .lyrics{
+	font-size: 16px;
+	font-family: "黑体";
+	color:white;
+	overflow: auto;
+	height: 500px;
+	line-height: 34px;
+}
+
+.content
+{
+	align-self: flex-end;
+	margin-left: 120px;
+	padding: 0;
+}
+
+.content img{
+	height: 40px;
+}
+
+.content th{
+	color: #6AACFF;
+}
+
+.content>table{
+	margin-bottom: 100px;
+	padding: 5px;
+	border:2px inset #6AACFF;
+	border-radius: 20px;
+}
+
+.content ul{
+	align-self: flex-end;
+	margin:0 0 0 0;
+	width:500px;
+	color:white;
+	font-size: 12px;
+	line-height: 30px;
+	list-style-type: none;
+	padding: 0
+}
+
+.content li{
+	padding-bottom: 12px;
+}
+
+
+
+::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 14px;		/*滚动条宽高*/
+  height: 14px;
+}
+ 
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {/*滚动条轨迹和滑块*/
+  border-radius: 999px;
+  border: 5px solid transparent;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+}
+ 
+::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  background-clip: content-box;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
+}
+ 
+::-webkit-scrollbar-corner {/*滚动条边角*/
+  background: transparent;
+}
+
+#satellite{
+	position: fixed;
+	animation: move 15s;
+	-webkit-animation:move 15s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+
+@-webkit-keyframes move
+{
+	0%{right: 750px;top:10px;opacity: 0;width: 150px;}
+	15%{opacity: 1;width: 250px;}
+	42%{ width: 250px;}
+	55%{opacity: 1;}
+	60%{right:0px;top:350px;opacity: 0;width: 200px;}
+	100%{right:0px;top:350px;opacity: 0;width: 200px;}
+}
+
+
